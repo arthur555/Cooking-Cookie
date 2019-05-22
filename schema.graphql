@@ -1,0 +1,28 @@
+interface Node{
+    id: ID!
+}
+
+type Query{
+    records: [Record]
+    node(id: ID): Node
+}
+
+type Record{
+    date: String
+    items: [String]
+}
+
+input CreateItemsInput{
+    date: String
+    item: String
+    clientMutationId: String
+}
+
+type CreateItemsPayload{
+    date: String
+    items: [[String]]
+}
+
+type Mutation{
+    createItems(input: CreateItemsInput):CreateItemsPayload
+}

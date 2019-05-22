@@ -1,0 +1,124 @@
+17:10:59.701 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  org.eclipse.jetty.util.log - Logging initialized @110507ms
+17:10:59.957 [StartIDEWebServerThread] INFO  com.flow.ide.server.JettyWebServer - Starting service on port: 3571
+17:10:59.964 [StartIDEWebServerThread] INFO  com.flow.ide.server.JettyWebServer - Jetty web server is starting
+17:10:59.970 [StartIDEWebServerThread] INFO  org.eclipse.jetty.server.Server - jetty-9.2.10.v20150310
+17:11:00.018 [StartIDEWebServerThread] INFO  / - Initializing Spring root WebApplicationContext
+17:11:00.024 [StartIDEWebServerThread] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+17:11:00.358 [StartIDEWebServerThread] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Sat May 11 17:11:00 PDT 2019]; root of context hierarchy
+17:11:00.493 [StartIDEWebServerThread] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.flow.intellij.bootstrap.IntellijConfiguration,class com.flow.ide.TopConfiguration]
+17:11:00.936 [StartIDEWebServerThread] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+17:11:03.408 [StartIDEWebServerThread] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 
+17:11:03.422 [StartIDEWebServerThread] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'deployerTaskScheduler'
+17:11:04.132 [StartIDEWebServerThread] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/methods],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity com.flow.ide.controllers.MethodSelectController.selectMethod(com.flow.ide.controllers.MethodResource)
+17:11:04.135 [StartIDEWebServerThread] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.flow.ide.controllers.RootController.getRootResource()
+17:11:04.202 [StartIDEWebServerThread] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sat May 11 17:11:00 PDT 2019]; root of context hierarchy
+17:11:04.323 [StartIDEWebServerThread] INFO  c.f.i.e.LocalResourceCleaner - Delete folder C:\Users\zhaos\.flow\applications\spring-cloud-dataflow-7766289694513570010
+17:11:04.325 [StartIDEWebServerThread] INFO  c.f.i.e.LocalResourceCleaner - Delete folder C:\Users\zhaos\.flow\applications\spring-cloud-dataflow-8641794082777873007
+17:11:04.740 [StartIDEWebServerThread] INFO  c.f.i.e.EnvironmentServiceImpl - Could not shutdown application http://localhost:52672 
+17:11:04.851 [StartIDEWebServerThread] INFO  c.f.i.e.EnvironmentServiceImpl - Could not shutdown application http://localhost:52354 
+17:11:04.956 [StartIDEWebServerThread] INFO  c.f.i.e.EnvironmentServiceImpl - Could not shutdown application http://localhost:7575 
+17:11:05.227 [StartIDEWebServerThread] INFO  com.flow.deployer.AppDeployerAdapter - Preparing deployment for application [[AppDefinition@695bb563 name = 'kafka', properties = map['server.port' -> '54628', 'spring.config.location' -> 'file:C:\Users\zhaos/.flow/flow.properties', 'flow.kafka.port' -> '62389']]] with deployment properties [{JAVA_OPTS=-Xmx256m,-Xss256k,-XX:+HeapDumpOnOutOfMemoryError,-XX:HeapDumpPath=C:\Users\zhaos\.flow\logs}] and command line args [[]]
+17:11:05.443 [StartIDEWebServerThread] INFO  o.s.c.d.spi.local.LocalAppDeployer - deploying app null.kafka instance 0
+   Logs will be in C:\Users\zhaos\.flow\applications\spring-cloud-dataflow-4343261885456474198\null-1557619865229\null.kafka
+17:11:05.449 [StartIDEWebServerThread] INFO  com.flow.deployer.AppDeployerAdapter - Deployment started for application kafka
+17:11:06.662 [deployerTaskScheduler-1] INFO  com.flow.deployer.AppDeployerAdapter - Deployment null.kafka went from unknown to deploying
+17:11:06.667 [deployerTaskScheduler-1] INFO  c.f.i.e.DeploymentEventPublisher - kafka is deploying
+17:11:06.817 [StartIDEWebServerThread] INFO  com.flow.deployer.AppDeployerAdapter - Preparing deployment for application [[AppDefinition@cfbcf4c name = 'player', properties = map['server.port' -> '52354', 'flow.kafka.broker-address' -> 'localhost:62389', 'spring.config.location' -> 'file:C:\Users\zhaos/.flow/flow.properties']]] with deployment properties [{JAVA_OPTS=-Xmx384m,-Xss256k,-XX:+HeapDumpOnOutOfMemoryError,-XX:HeapDumpPath=C:\Users\zhaos\.flow\logs}] and command line args [[]]
+17:11:06.828 [StartIDEWebServerThread] INFO  o.s.c.d.spi.local.LocalAppDeployer - deploying app null.player instance 0
+   Logs will be in C:\Users\zhaos\.flow\applications\spring-cloud-dataflow-4343261885456474198\null-1557619866824\null.player
+17:11:06.828 [StartIDEWebServerThread] INFO  com.flow.deployer.AppDeployerAdapter - Deployment started for application player
+17:11:07.147 [StartIDEWebServerThread] INFO  com.flow.deployer.AppDeployerAdapter - Preparing deployment for application [[AppDefinition@3285ffb6 name = 'webapp', properties = map['server.port' -> '7575', 'spring.config.location' -> 'file:C:\Users\zhaos/.flow/flow.properties']]] with deployment properties [{JAVA_OPTS=-Xmx32m,-Xss256k,-XX:+HeapDumpOnOutOfMemoryError,-XX:HeapDumpPath=C:\Users\zhaos\.flow\logs}] and command line args [[]]
+17:11:07.152 [StartIDEWebServerThread] INFO  o.s.c.d.spi.local.LocalAppDeployer - deploying app null.webapp instance 0
+   Logs will be in C:\Users\zhaos\.flow\applications\spring-cloud-dataflow-4343261885456474198\null-1557619867147\null.webapp
+17:11:07.162 [StartIDEWebServerThread] INFO  com.flow.deployer.AppDeployerAdapter - Deployment started for application webapp
+17:11:07.167 [StartIDEWebServerThread] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7142 ms
+17:11:07.184 [StartIDEWebServerThread] INFO  / - Initializing Spring FrameworkServlet 'org.springframework.web.servlet.DispatcherServlet-240dd297'
+17:11:07.185 [StartIDEWebServerThread] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'org.springframework.web.servlet.DispatcherServlet-240dd297': initialization started
+17:11:07.264 [StartIDEWebServerThread] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'org.springframework.web.servlet.DispatcherServlet-240dd297': initialization completed in 36 ms
+17:11:07.265 [StartIDEWebServerThread] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5b34ad4e{/,null,AVAILABLE}
+17:11:07.281 [StartIDEWebServerThread] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@2b79afa4{HTTP/1.1}{0.0.0.0:3571}
+17:11:07.282 [StartIDEWebServerThread] INFO  org.eclipse.jetty.server.Server - Started @118092ms
+17:11:07.282 [StartIDEWebServerThread] INFO  com.flow.ide.server.JettyWebServer - Jetty web server is started
+17:11:07.881 [deployerTaskScheduler-1] INFO  com.flow.deployer.AppDeployerAdapter - Deployment null.player went from unknown to deploying
+17:11:07.881 [deployerTaskScheduler-1] INFO  c.f.i.e.DeploymentEventPublisher - player is deploying
+17:11:08.288 [deployerTaskScheduler-1] INFO  com.flow.deployer.AppDeployerAdapter - Deployment null.webapp went from unknown to deploying
+17:11:08.298 [deployerTaskScheduler-1] INFO  c.f.i.e.DeploymentEventPublisher - webapp is deploying
+17:11:22.581 [deployerTaskScheduler-1] INFO  com.flow.deployer.AppDeployerAdapter - Deployment null.webapp went from deploying to deployed
+17:11:22.590 [deployerTaskScheduler-1] INFO  c.f.i.e.DeploymentEventPublisher - webapp was deployed at http://localhost:7575
+17:11:26.616 [deployerTaskScheduler-1] INFO  com.flow.deployer.AppDeployerAdapter - Deployment null.kafka went from deploying to deployed
+17:11:26.625 [deployerTaskScheduler-1] INFO  c.f.i.e.DeploymentEventPublisher - kafka was deployed at http://localhost:54628
+17:11:30.043 [deployerTaskScheduler-1] INFO  com.flow.deployer.AppDeployerAdapter - Deployment null.player went from deploying to deployed
+17:11:30.049 [deployerTaskScheduler-1] INFO  c.f.i.e.DeploymentEventPublisher - player was deployed at http://localhost:52354
+17:13:37.672 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  com.flow.ide.server.JettyWebServer - Jetty web server is stopping
+17:13:37.699 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@2b79afa4{HTTP/1.1}{0.0.0.0:3571}
+17:13:37.699 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  / - Destroying Spring FrameworkServlet 'org.springframework.web.servlet.DispatcherServlet-240dd297'
+17:13:37.708 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Closing Root WebApplicationContext: startup date [Sat May 11 17:11:00 PDT 2019]; root of context hierarchy
+17:13:37.710 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'deployerTaskScheduler'
+17:13:37.719 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'deployerTaskScheduler'
+17:13:37.720 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.s.c.d.spi.local.LocalAppDeployer - un-deploying app null.player instance 0
+17:13:37.752 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.s.c.d.spi.local.LocalAppDeployer - un-deploying app null.kafka instance 0
+17:13:37.784 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.s.c.d.spi.local.LocalAppDeployer - un-deploying app null.webapp instance 0
+17:13:37.827 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  / - Closing Spring root WebApplicationContext
+17:13:37.853 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5b34ad4e{/,null,UNAVAILABLE}
+17:13:37.855 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  com.flow.ide.server.JettyWebServer - Jetty web server is stopped
+17:13:47.620 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  org.eclipse.jetty.util.log - Logging initialized @8326ms
+17:13:47.716 [StartIDEWebServerThread] INFO  com.flow.ide.server.JettyWebServer - Starting service on port: 3571
+17:13:47.718 [StartIDEWebServerThread] INFO  com.flow.ide.server.JettyWebServer - Jetty web server is starting
+17:13:47.722 [StartIDEWebServerThread] INFO  org.eclipse.jetty.server.Server - jetty-9.2.10.v20150310
+17:13:47.760 [StartIDEWebServerThread] INFO  / - Initializing Spring root WebApplicationContext
+17:13:47.760 [StartIDEWebServerThread] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+17:13:47.824 [StartIDEWebServerThread] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Sat May 11 17:13:47 PDT 2019]; root of context hierarchy
+17:13:47.882 [StartIDEWebServerThread] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.flow.intellij.bootstrap.IntellijConfiguration,class com.flow.ide.TopConfiguration]
+17:13:48.276 [StartIDEWebServerThread] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+17:13:48.861 [StartIDEWebServerThread] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 
+17:13:48.884 [StartIDEWebServerThread] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'deployerTaskScheduler'
+17:13:49.292 [StartIDEWebServerThread] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/methods],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity com.flow.ide.controllers.MethodSelectController.selectMethod(com.flow.ide.controllers.MethodResource)
+17:13:49.305 [StartIDEWebServerThread] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.flow.ide.controllers.RootController.getRootResource()
+17:13:49.386 [StartIDEWebServerThread] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sat May 11 17:13:47 PDT 2019]; root of context hierarchy
+17:13:49.702 [StartIDEWebServerThread] INFO  c.f.i.e.EnvironmentServiceImpl - Could not shutdown application http://localhost:54628 
+17:13:49.804 [StartIDEWebServerThread] INFO  c.f.i.e.EnvironmentServiceImpl - Could not shutdown application http://localhost:52354 
+17:13:49.912 [StartIDEWebServerThread] INFO  c.f.i.e.EnvironmentServiceImpl - Could not shutdown application http://localhost:7575 
+17:13:50.184 [StartIDEWebServerThread] INFO  com.flow.deployer.AppDeployerAdapter - Preparing deployment for application [[AppDefinition@37ef68b3 name = 'kafka', properties = map['server.port' -> '52626', 'spring.config.location' -> 'file:C:\Users\zhaos/.flow/flow.properties', 'flow.kafka.port' -> '59730']]] with deployment properties [{JAVA_OPTS=-Xmx256m,-Xss256k,-XX:+HeapDumpOnOutOfMemoryError,-XX:HeapDumpPath=C:\Users\zhaos\.flow\logs}] and command line args [[]]
+17:13:50.191 [StartIDEWebServerThread] INFO  o.s.c.d.spi.local.LocalAppDeployer - deploying app null.kafka instance 0
+   Logs will be in C:\Users\zhaos\.flow\applications\spring-cloud-dataflow-8825671828615828483\null-1557620030185\null.kafka
+17:13:50.192 [StartIDEWebServerThread] INFO  com.flow.deployer.AppDeployerAdapter - Deployment started for application kafka
+17:13:51.100 [deployerTaskScheduler-1] INFO  com.flow.deployer.AppDeployerAdapter - Deployment null.kafka went from unknown to deploying
+17:13:51.107 [deployerTaskScheduler-1] INFO  c.f.i.e.DeploymentEventPublisher - kafka is deploying
+17:13:51.865 [StartIDEWebServerThread] INFO  com.flow.deployer.AppDeployerAdapter - Preparing deployment for application [[AppDefinition@ad11201 name = 'player', properties = map['server.port' -> '52354', 'flow.kafka.broker-address' -> 'localhost:59730', 'spring.config.location' -> 'file:C:\Users\zhaos/.flow/flow.properties']]] with deployment properties [{JAVA_OPTS=-Xmx384m,-Xss256k,-XX:+HeapDumpOnOutOfMemoryError,-XX:HeapDumpPath=C:\Users\zhaos\.flow\logs}] and command line args [[]]
+17:13:51.870 [StartIDEWebServerThread] INFO  o.s.c.d.spi.local.LocalAppDeployer - deploying app null.player instance 0
+   Logs will be in C:\Users\zhaos\.flow\applications\spring-cloud-dataflow-8825671828615828483\null-1557620031866\null.player
+17:13:51.882 [StartIDEWebServerThread] INFO  com.flow.deployer.AppDeployerAdapter - Deployment started for application player
+17:13:52.101 [StartIDEWebServerThread] INFO  com.flow.deployer.AppDeployerAdapter - Preparing deployment for application [[AppDefinition@1db7369e name = 'webapp', properties = map['server.port' -> '7575', 'spring.config.location' -> 'file:C:\Users\zhaos/.flow/flow.properties']]] with deployment properties [{JAVA_OPTS=-Xmx32m,-Xss256k,-XX:+HeapDumpOnOutOfMemoryError,-XX:HeapDumpPath=C:\Users\zhaos\.flow\logs}] and command line args [[]]
+17:13:52.114 [StartIDEWebServerThread] INFO  o.s.c.d.spi.local.LocalAppDeployer - deploying app null.webapp instance 0
+   Logs will be in C:\Users\zhaos\.flow\applications\spring-cloud-dataflow-8825671828615828483\null-1557620032109\null.webapp
+17:13:52.114 [StartIDEWebServerThread] INFO  com.flow.deployer.AppDeployerAdapter - Deployment started for application webapp
+17:13:52.154 [StartIDEWebServerThread] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4394 ms
+17:13:52.159 [StartIDEWebServerThread] INFO  / - Initializing Spring FrameworkServlet 'org.springframework.web.servlet.DispatcherServlet-4972f31c'
+17:13:52.160 [StartIDEWebServerThread] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'org.springframework.web.servlet.DispatcherServlet-4972f31c': initialization started
+17:13:52.179 [StartIDEWebServerThread] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'org.springframework.web.servlet.DispatcherServlet-4972f31c': initialization completed in 19 ms
+17:13:52.192 [StartIDEWebServerThread] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@475d06e0{/,null,AVAILABLE}
+17:13:52.204 [StartIDEWebServerThread] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@530c83ae{HTTP/1.1}{0.0.0.0:3571}
+17:13:52.204 [StartIDEWebServerThread] INFO  org.eclipse.jetty.server.Server - Started @12912ms
+17:13:52.205 [StartIDEWebServerThread] INFO  com.flow.ide.server.JettyWebServer - Jetty web server is started
+17:13:52.324 [deployerTaskScheduler-1] INFO  com.flow.deployer.AppDeployerAdapter - Deployment null.player went from unknown to deploying
+17:13:52.324 [deployerTaskScheduler-1] INFO  c.f.i.e.DeploymentEventPublisher - player is deploying
+17:13:52.728 [deployerTaskScheduler-1] INFO  com.flow.deployer.AppDeployerAdapter - Deployment null.webapp went from unknown to deploying
+17:13:52.728 [deployerTaskScheduler-1] INFO  c.f.i.e.DeploymentEventPublisher - webapp is deploying
+17:14:05.456 [deployerTaskScheduler-1] INFO  com.flow.deployer.AppDeployerAdapter - Deployment null.webapp went from deploying to deployed
+17:14:05.465 [deployerTaskScheduler-1] INFO  c.f.i.e.DeploymentEventPublisher - webapp was deployed at http://localhost:7575
+17:14:08.085 [deployerTaskScheduler-2] INFO  com.flow.deployer.AppDeployerAdapter - Deployment null.kafka went from deploying to deployed
+17:14:08.093 [deployerTaskScheduler-2] INFO  c.f.i.e.DeploymentEventPublisher - kafka was deployed at http://localhost:52626
+17:14:12.729 [deployerTaskScheduler-2] INFO  com.flow.deployer.AppDeployerAdapter - Deployment null.player went from deploying to deployed
+17:14:12.734 [deployerTaskScheduler-2] INFO  c.f.i.e.DeploymentEventPublisher - player was deployed at http://localhost:52354
+18:19:46.674 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  com.flow.ide.server.JettyWebServer - Jetty web server is stopping
+18:19:46.693 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@530c83ae{HTTP/1.1}{0.0.0.0:3571}
+18:19:46.703 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  / - Destroying Spring FrameworkServlet 'org.springframework.web.servlet.DispatcherServlet-4972f31c'
+18:19:46.704 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Closing Root WebApplicationContext: startup date [Sat May 11 17:13:47 PDT 2019]; root of context hierarchy
+18:19:46.719 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'deployerTaskScheduler'
+18:19:46.720 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'deployerTaskScheduler'
+18:19:46.726 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.s.c.d.spi.local.LocalAppDeployer - un-deploying app null.player instance 0
+18:19:46.759 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.s.c.d.spi.local.LocalAppDeployer - un-deploying app null.kafka instance 0
+18:19:46.790 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.s.c.d.spi.local.LocalAppDeployer - un-deploying app null.webapp instance 0
+18:19:46.824 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  / - Closing Spring root WebApplicationContext
+18:19:46.846 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@475d06e0{/,null,UNAVAILABLE}
+18:19:46.847 [AWT-EventQueue-0 2018.3.1#IU-183.4588.61 IDEA, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_152-release-1343-b16] INFO  com.flow.ide.server.JettyWebServer - Jetty web server is stopped
